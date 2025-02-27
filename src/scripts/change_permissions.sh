@@ -1,2 +1,2 @@
 #!/bin/bash
-rm appspec.yml
+rm ../appspec.yml
