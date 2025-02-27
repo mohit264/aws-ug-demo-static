@@ -1,2 +1,3 @@
 #!/bin/bash
-rm ../appspec.yml
+ls -l
+ls -l ../
