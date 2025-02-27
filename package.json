@@ -1,0 +1,22 @@
+{
+  "name": "my-static-website",
+  "version": "1.0.0",
+  "description": "A static website with an immersive user experience.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "immersive",
+    "user experience"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
