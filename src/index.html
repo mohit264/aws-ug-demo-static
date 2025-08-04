@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+    @if lt IE 9
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> You are using an outdated browser. Please upgrade your browser to improve your
+        experience.
+    </div>
+    @endif
     <header>
         <div class="container">
             <h1>Welcome to AWS User Group Pune Website</h1>
@@ -24,6 +34,17 @@
         </div>
     </header>
     <main>
+        @BE API GET /users?search={searchTerm}
+        <div class="hero">
+            <div class="container">
+                <!--BE Developer should add some server based rendering-->
+                <h2>Git and GitHub Deep Dive Training</h2>
+                <p>Master version control systems with our comprehensive training program.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+            <label for="search-bar" class="visually-hidden">Search</label>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
         <section id="about" class="container">
             <h2>About Us</h2>
             <p><strong>Unlock your potential</strong> with our comprehensive Git and GitHub Deep Dive Training. Designed
