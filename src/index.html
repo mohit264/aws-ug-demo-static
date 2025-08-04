@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+    @if lt IE 9
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> You are using an outdated browser. Please upgrade your browser to improve your
+        experience.
+    </div>
+    @endif
     <header>
         <div class="container">
             <h1>Welcome to AWS User Group Pune Website</h1>
@@ -24,6 +34,9 @@
         </div>
     </header>
     <main>
+        <!-- Ashwini is calling BE API for User entered in Search bar   -->
+        @BE API GET /users?search={searchTerm}
+        <!-- Suhas will going to handle FE funtionality -->
         <section id="about" class="container">
             <h2>About Us</h2>
             <p><strong>Unlock your potential</strong> with our comprehensive Git and GitHub Deep Dive Training. Designed
